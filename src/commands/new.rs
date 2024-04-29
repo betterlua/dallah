@@ -7,7 +7,7 @@ use thiserror::Error;
 use super::project_create::{create_file, r#type};
 
 #[derive(clap::Parser, Debug)]
-#[clap(about = "Create new Meteor project in existing directory")]
+#[clap(about = "Create new Meteor project in new directory")]
 pub struct New {
     path: String,
     #[clap(short, long)]
